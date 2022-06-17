@@ -25,9 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('backend/', views.home),
     path('home/', include('home.urls')),
+    path('user/', include('user.urls')),
     # path('home/', include(urls)),
     path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT})
     # re_path('^media/(?P<path>.*)', serve,{'document_root':settings.MEDIA_ROOT})
 ]
-
 
